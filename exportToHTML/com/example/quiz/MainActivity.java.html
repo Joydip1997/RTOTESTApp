@@ -1,0 +1,302 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #0000ff;}
+.s3 { color: #808080; font-style: italic;}
+.s4 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.quiz;
+
+<span class="s0">import </span>androidx.appcompat.app.AppCompatActivity;
+
+<span class="s0">import </span>android.content.Intent;
+<span class="s0">import </span>android.graphics.Color;
+<span class="s0">import </span>android.os.Bundle;
+<span class="s0">import </span>android.view.View;
+<span class="s0">import </span>android.widget.Button;
+<span class="s0">import </span>android.widget.ImageView;
+<span class="s0">import </span>android.widget.TextView;
+<span class="s0">import </span>android.widget.Toast;
+
+<span class="s0">import </span>com.squareup.picasso.Picasso;
+
+<span class="s0">import </span>org.json.JSONArray;
+<span class="s0">import </span>org.json.JSONException;
+<span class="s0">import </span>org.json.JSONObject;
+
+<span class="s0">import </span>java.io.IOException;
+<span class="s0">import </span>java.io.InputStream;
+<span class="s0">import </span>java.util.ArrayList;
+<span class="s0">import </span>java.util.Collections;
+<span class="s0">import </span>java.util.List;
+
+<span class="s0">public class </span>MainActivity <span class="s0">extends </span>AppCompatActivity {
+   <span class="s0">private </span>Button Answer1,Answer2,Answer3,Next;
+   <span class="s0">private </span>TextView Question,cAnswers,wAnswers;
+   <span class="s0">private </span>ImageView image,img1;
+   <span class="s0">private </span>Boolean flag;
+   List&lt;Questionitem&gt; questionitem;
+   ArrayList&lt;Button&gt; buttonList = <span class="s0">new </span>ArrayList&lt;Button&gt;();
+
+   <span class="s0">int </span>currentQuestion=<span class="s2">0</span>,correct=<span class="s2">0</span>,wrong=<span class="s2">0</span>;
+    @Override
+    <span class="s0">protected void </span>onCreate(Bundle savedInstanceState) {
+        <span class="s0">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        setView();
+        <span class="s3">//get all questions</span>
+        loadAllQuestions();
+        <span class="s3">//Shuffeling Questions</span>
+        Collections.shuffle(questionitem);
+        <span class="s3">//Load first question</span>
+        setQuestiononScreen(currentQuestion);
+
+        cAnswers.setText(String.valueOf(correct));
+        wAnswers.setText(String.valueOf(wrong));
+
+        Answer1.setOnClickListener(<span class="s0">new </span>View.OnClickListener() {
+            @Override
+            <span class="s0">public void </span>onClick(View view) {
+                <span class="s3">//checking the answers if the are correct or not</span>
+                Answer2.setBackgroundColor(getResources().getColor(R.color.bttn));
+                Answer3.setBackgroundColor(getResources().getColor(R.color.bttn));
+                Answer1.setBackgroundColor(Color.GREEN);
+                <span class="s0">if</span>(questionitem.get(currentQuestion).getAnswer1().equals(questionitem.get(currentQuestion).getCorrect()))
+                {
+                    flag = <span class="s0">true</span>;
+
+                }
+                <span class="s0">else</span>
+                {
+
+                    flag=<span class="s0">false</span>;
+                }
+
+
+            }
+        });
+
+
+        Answer2.setOnClickListener(<span class="s0">new </span>View.OnClickListener() {
+            @Override
+            <span class="s0">public void </span>onClick(View view) {
+                <span class="s3">//checking the answers if the are correct or not</span>
+                Answer1.setBackgroundColor(getResources().getColor(R.color.bttn));
+                Answer3.setBackgroundColor(getResources().getColor(R.color.bttn));
+                Answer2.setBackgroundColor(Color.GREEN);
+                <span class="s0">if</span>(questionitem.get(currentQuestion).getAnswer2().equals(questionitem.get(currentQuestion).getCorrect()))
+                {
+                    flag = <span class="s0">true</span>;
+
+                }
+                <span class="s0">else</span>
+                {
+
+                    flag=<span class="s0">false</span>;
+                }
+
+
+            }
+        });
+
+        Answer3.setOnClickListener(<span class="s0">new </span>View.OnClickListener() {
+            @Override
+            <span class="s0">public void </span>onClick(View view) {
+                <span class="s3">//checking the answers if the are correct or not</span>
+                Answer1.setBackgroundColor(getResources().getColor(R.color.bttn));
+                Answer2.setBackgroundColor(getResources().getColor(R.color.bttn));
+                Answer3.setBackgroundColor(Color.GREEN);
+
+                <span class="s0">if</span>(questionitem.get(currentQuestion).getAnswer3().equals(questionitem.get(currentQuestion).getCorrect()))
+                {
+                    flag = <span class="s0">true</span>;
+
+                }
+                <span class="s0">else</span>
+                {
+
+                    flag=<span class="s0">false</span>;
+                }
+
+
+            }
+        });
+
+        Next.setOnClickListener(<span class="s0">new </span>View.OnClickListener() {
+            @Override
+            <span class="s0">public void </span>onClick(View view) {
+
+                <span class="s0">if</span>(flag)
+                {
+                    correct++;
+                    cAnswers.setText(String.valueOf(correct));
+                    wAnswers.setText(String.valueOf(wrong));
+                }
+                <span class="s0">else</span>
+                {
+                    wrong++;
+                    cAnswers.setText(String.valueOf(correct));
+                    wAnswers.setText(String.valueOf(wrong));
+                }
+
+
+                <span class="s0">if</span>(currentQuestion&lt;questionitem.size()-<span class="s2">1</span>)
+                {
+                    Answer1.setBackgroundColor(getResources().getColor(R.color.bttn));
+                    Answer2.setBackgroundColor(getResources().getColor(R.color.bttn));
+                    Answer3.setBackgroundColor(getResources().getColor(R.color.bttn));
+                    currentQuestion++;
+                    setQuestiononScreen(currentQuestion);
+                }
+                <span class="s0">else</span>
+                {
+                    Toast.makeText(MainActivity.<span class="s0">this</span>, <span class="s4">&quot;End&quot;</span>, Toast.LENGTH_SHORT).show();
+                    Intent endVales = <span class="s0">new </span>Intent(getApplicationContext(),EndActivity.<span class="s0">class</span>)
+                            .putExtra(<span class="s4">&quot;CorrectAnswers&quot;</span>,String.valueOf(correct))
+                            .putExtra(<span class="s4">&quot;WrongAnswers&quot;</span>,String.valueOf(wrong));
+                    startActivity(endVales);
+
+                }
+
+            }
+        });
+
+      <span class="s3">/*  Answer4.setOnClickListener(new View.OnClickListener() { 
+            @Override 
+            public void onClick(View view) { 
+                //checking the answers if the are correct or not 
+                if(questionitem.get(currentQuestion).getAnswer4().equals(questionitem.get(currentQuestion).getCorrect())) 
+                { 
+                    //Answer is correct 
+                    Toast.makeText(MainActivity.this, &quot;Correct&quot;, Toast.LENGTH_SHORT).show(); 
+                    correct++; 
+                } 
+                else 
+                { 
+                    Toast.makeText(MainActivity.this, &quot;Wrong&quot; + &quot;Correct Amswer Is &quot; + questionitem.get(currentQuestion).getCorrect(), Toast.LENGTH_SHORT).show(); 
+                    wrong++; 
+ 
+                } 
+ 
+                if(currentQuestion&lt;questionitem.size()-1) 
+                { 
+                    currentQuestion++; 
+                    setQuestiononScreen(currentQuestion); 
+                } 
+                else 
+                { 
+ 
+                    Toast.makeText(MainActivity.this, &quot;End&quot;, Toast.LENGTH_SHORT).show(); 
+                    Intent endVales = new Intent(getApplicationContext(),EndActivity.class) 
+                            .putExtra(&quot;CorrectAnswers&quot;,String.valueOf(correct)) 
+                            .putExtra(&quot;WrongAnswers&quot;,String.valueOf(wrong)); 
+                    startActivity(endVales); 
+                } 
+            } 
+        });*/</span>
+
+
+
+    }
+
+    <span class="s0">public void </span>setView()
+    {
+        Question = (TextView)findViewById(R.id.question);
+        Answer1 = (Button)findViewById(R.id.answer1);
+        Answer2 = (Button)findViewById(R.id.answer2);
+        Answer3 = (Button)findViewById(R.id.answer3);
+        Next = (Button)findViewById(R.id.next);
+        image = (ImageView)findViewById(R.id.img);
+        img1 = (ImageView)findViewById(R.id.img1);
+        cAnswers = (TextView)findViewById(R.id.number_corect_answers);
+        wAnswers = (TextView)findViewById(R.id.number_wrong_answers);
+    }
+
+
+<span class="s3">//Loading JSON From Assets</span>
+<span class="s0">private </span>String loadJSONFromAssets(String file)
+{
+    String json = <span class="s4">&quot;&quot;</span>;
+    <span class="s0">try</span>
+    {
+        InputStream is = getAssets().open(file);
+        <span class="s0">int </span>size = is.available();
+        <span class="s0">byte </span>buffer[] = <span class="s0">new byte</span>[size];
+        is.read(buffer);
+        is.close();
+        json = <span class="s0">new </span>String(buffer,<span class="s4">&quot;UTF-8&quot;</span>);
+    } <span class="s0">catch </span>(IOException e) {
+        e.printStackTrace();
+    }
+    <span class="s0">return </span>json;
+}
+
+<span class="s3">//make a list of all questions</span>
+    <span class="s0">private void </span>loadAllQuestions()
+    {
+        questionitem = <span class="s0">new </span>ArrayList&lt;&gt;();
+
+        String JsonStr = loadJSONFromAssets(<span class="s4">&quot;questions.JSON&quot;</span>);
+
+        <span class="s0">try</span>
+        {
+            JSONObject obj = <span class="s0">new </span>JSONObject(JsonStr);
+            JSONArray questions = obj.getJSONArray(<span class="s4">&quot;questions&quot;</span>);
+            <span class="s0">for</span>(<span class="s0">int </span>i=<span class="s2">0</span>;i&lt;questions.length();i++)
+            {
+                JSONObject question = questions.getJSONObject(i);
+
+                String imgurlSTR = question.getString(<span class="s4">&quot;url&quot;</span>);
+                String questionSTR = question.getString(<span class="s4">&quot;Question&quot;</span>);
+                String answer1STR = question.getString(<span class="s4">&quot;answer1&quot;</span>);
+                String answer2STR = question.getString(<span class="s4">&quot;answer2&quot;</span>);
+                String answer3STR = question.getString(<span class="s4">&quot;answer3&quot;</span>);
+
+                String correctSTR = question.getString(<span class="s4">&quot;correct&quot;</span>);
+
+                questionitem.add(<span class="s0">new </span>Questionitem(
+                        imgurlSTR,
+                        questionSTR,
+                        answer1STR,
+                        answer2STR,
+                        answer3STR,
+                        correctSTR
+                ));
+            }
+        } <span class="s0">catch </span>(JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    <span class="s3">//Seting questions on screen</span>
+    <span class="s0">private void </span>setQuestiononScreen(<span class="s0">int </span>number)
+    {
+        String url  = questionitem.get(number).getImgurl();
+        Picasso.with(<span class="s0">this</span>).load(url).into(image);
+        Question.setText(questionitem.get(number).getQuestion());
+        Answer1.setText(questionitem.get(number).getAnswer1());
+        Answer2.setText(questionitem.get(number).getAnswer2());
+        Answer3.setText(questionitem.get(number).getAnswer3());
+
+        
+
+
+    }
+
+
+}
+</pre>
+</body>
+</html>

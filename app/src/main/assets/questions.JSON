@@ -1,0 +1,507 @@
+{
+	"questions": [{
+		"url": "noimg",
+		"Question": "Near a pedestrian crossing, when the pedestrians are waiting to cross the road, you should ",
+		"answer1": "Sound horn and proceed ",
+		"answer2": "Slow down, sound horn and pass",
+		"answer3": "Stop the vehicle and wait till the pedestrians cross the road and then proceed ",
+		"correct": "Stop the vehicle and wait till the pedestrians cross the road and then proceed ",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "noimg",
+		"Question": "You are approaching a narrow bridge, another vehicle is about to enter the bridge from opposite side you should",
+		"answer1": "Increase the speed and try to cross the bridge as fast as possible",
+		"answer2": "Put on the head light and pass the bridge",
+		"answer3": "Wait till the other vehicle crosses the bridge and then proceed",
+		"correct": "Wait till the other vehicle crosses the bridge and then proceed",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "comleftturn",
+		"Question": "The following sign represents..",
+		"answer1": "Keep left",
+		"answer2": "There is no road to the left",
+		"answer3": "Compulsory turn left",
+		"correct": "Compulsory turn left",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "noimg",
+		"Question": "When a vehicle is involved in an accident causing injury to any person",
+		"answer1": "Take the vehicle to the nearest police station and report the accident",
+		"answer2": "Stop the vehicle and report to the police station",
+		"answer3": "Take all reasonable steps to secure medical attention to the injured \n and report to the nearest policestation within 24 hours",
+		"correct": "Take all reasonable steps to secure medical attention to the injured \n and report to the nearest policestation within 24 hours",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "giveaway",
+		"Question": "The following sign represents...",
+		"answer1": "Give way",
+		"answer2": "Hospital ahead",
+		"answer3": "Traffic island ahead",
+		"correct": "Give way",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "noimg",
+		"Question": "On a road designated as one way",
+		"answer1": "Parking is prohibited",
+		"answer2": "Overtaking is prohibited",
+		"answer3": "Should not drive in reverse gear",
+		"correct": "Should not drive in reverse gear",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "oneway",
+		"Question": "The following sign represents..",
+		"answer1": "No entry",
+		"answer2": "One way",
+		"answer3": "Speed limit ends ",
+		"correct": "One way",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	}, {
+		"url": "noimg",
+		"Question": "You can overtake a vehicle in front",
+		"answer1": "Through the right side of that vehicle",
+		"answer2": "Through the left side",
+		"answer3": "Through the left side, if the road is wide",
+		"correct": "Through the right side of that vehicle",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "nouturn",
+		"Question": "The following sign represents..",
+		"answer1": "Right turn prohibited",
+		"answer2": "Sharp curve to the right",
+		"answer3": "U-turn prohibited",
+		"correct": "U-turn prohibited",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "noimg",
+		"Question": "When a vehicle approaches an unguarded railway level crossing, before crossing it, the driver shall",
+		"answer1": "Stop the vehicle on the left side of the road, get down from the vehicle, go to the railway track,and\nensure that no train or trolley is coming from either side",
+		"answer2": "Sound horn and cross the track as fast as possible",
+		"answer3": "Wait till the train passes",
+		"correct": "Stop the vehicle on the left side of the road, get down from the vehicle, go to the railway track,and\nensure that no train or trolley is coming from either side",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "pedistriancrossing",
+		"Question": "The following sign represents..",
+		"answer1": "Pedestrian crossing",
+		"answer2": "Pedestrians may enter",
+		"answer3": "Pedestrians prohibited",
+		"correct": "Pedestrian crossing",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "noimg",
+		"Question": "How can you distinguish a transport vehicle.",
+		"answer1": "By looking at the tyre size",
+		"answer2": "By colour of the vehicle",
+		"answer3": "By looking at the number plate of the vehicle",
+		"correct": "By looking at the number plate of the vehicle",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "parkrightsideallowed",
+		"Question": "The following sign represents..",
+		"answer1": "Keep right side",
+		"answer2": "Parking on the right allowed",
+		"answer3": "Compulsory turn to right",
+		"correct": "Parking on the right allowed",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},{
+		"url": "noimg",
+		"Question": "Validity of learners licence ",
+		"answer1": "Till the driving licence is obtained",
+		"answer2": "6 months",
+		"answer3": "30 days",
+		"correct": "6 months",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	},
+		{
+			"url": "norightturn",
+			"Question": "The following sign represents..",
+			"answer1": "U- Turn prohibited",
+			"answer2": "Right turn prohibited",
+			"answer3": "Overtaking through left prohibited",
+			"correct": "Right turn prohibited",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},
+		{
+			"url": "noimg",
+			"Question": "In a road without footpath, the pedestrians",
+			"answer1": "Should walk on the left side of the road",
+			"answer2": "Should walk on the right side of the road",
+			"answer3": "May walk on either side of the road",
+			"correct": "Should walk on the right side of the road",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},
+		{
+			"url": "nohorn",
+			"Question": "The following sign represents",
+			"answer1": "Horn prohibited",
+			"answer2": "Compulsory sound horn",
+			"answer3": "May sound horn",
+			"correct": "Horn prohibited",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},
+		{
+			"url": "noimg",
+			"Question": "Free passage should be given to the following types of vehicles",
+			"answer1": "Police vehicles",
+			"answer2": "Ambulance and fire service vehicles",
+			"answer3": "Express, Super Express buses",
+			"correct": "Ambulance and fire service vehicles",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "narrowbridge",
+			"Question": "The following sign represents",
+			"answer1": "Roads on both sides in front",
+			"answer2": "Narrow bridge ahead",
+			"answer3": "Narrow road ahead",
+			"correct": "Narrow bridge ahead",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "stop",
+			"Question": "The following sign represents",
+			"answer1": "Stop",
+			"answer2": "No parking",
+			"answer3": "Hospital ahead",
+			"correct": "Stop",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "hospital",
+			"Question": "The following sign represents..",
+			"answer1": "First aid post",
+			"answer2": "Resting place",
+			"answer3": "Hospital",
+			"correct": "Hospital",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Driver of a vehicle may overtake ?",
+			"answer1": "while driving down hill",
+			"answer2": "If the road is sufficiently wide",
+			"answer3": "When the driver of the vehicle in front shows the signal to overtake",
+			"correct": "When the driver of the vehicle in front shows the signal to overtake",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "firstaid",
+			"Question": "The following sign represents..",
+			"answer1": "First aid post",
+			"answer2": "Resting place",
+			"answer3": "Hospital",
+			"correct": "First aid post",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Driver of a motor vehicle shall drive through",
+			"answer1": "The right side of the road",
+			"answer2": "The left side of the road",
+			"answer3": "The Center of the road",
+			"correct": "The left side of the road",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "restplace",
+			"Question": "The following sign represents..",
+			"answer1": "Hospital",
+			"answer2": "Resting place",
+			"answer3": "First aid post",
+			"correct": "Resting place",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "When a Vehicle is parked on the road side during night",
+			"answer1": "The vehicle should be locked",
+			"answer2": "The person having licence to drive such a vehicle should be in the drivers seat",
+			"answer3": "The park light shall remain lit",
+			"correct": "The park light shall remain lit",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "endrestriction",
+			"Question": "The following sign represents..",
+			"answer1": "Road closed",
+			"answer2": "No parking",
+			"answer3": "End of speed restriction",
+			"correct": "End of speed restriction",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Fog lamps are used",
+			"answer1": "During night",
+			"answer2": "When there is mist",
+			"answer3": "When the opposite vehicle is not using dim light",
+			"correct": "When there is mist",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "The following sign represents..",
+			"answer1": "Narrow road ahead",
+			"answer2": "Narrow bridge ahead",
+			"answer3": "Roads on both sides ahead",
+			"correct": "Narrow road ahead",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Zebra lines are meant for..",
+			"answer1": "stopping vehicle.",
+			"answer2": "pedestrians crossing",
+			"answer3": "for giving preference to vehicle",
+			"correct": "pedestrians crossing",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "levelcrossingungurded",
+			"Question": "The following sign represents..",
+			"answer1": "Railway station near",
+			"answer2": "Level crossing unguarded",
+			"answer3": "Level crossing Guarded",
+			"correct": "Level crossing unguarded",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "When an ambulance is approaching..",
+			"answer1": "allow passage if there are no vehicles from front side",
+			"answer2": "no preference need be given",
+			"answer3": "the driver shall allow free passage by drawing to the side of the road",
+			"correct": "the driver shall allow free passage by drawing to the side of the road",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noovertake",
+			"Question": "The following sign represents..",
+			"answer1": "Entry through right side prohibited",
+			"answer2": "Entry through left prohibited",
+			"answer3": "Overtaking prohibited",
+			"correct": "Overtaking prohibited",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Red traffic light indicates..",
+			"answer1": "vehicle can proceed with caution",
+			"answer2": "stop the vehicle",
+			"answer3": "slow down",
+			"correct": "stop the vehicle",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "crossroad",
+			"Question": "The following sign represents..",
+			"answer1": "Cross road",
+			"answer2": "No entry",
+			"answer3": "Hospital",
+			"correct": "Cross road",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Parking a vehicle in front of entrance to hospital",
+			"answer1": "Proper",
+			"answer2": "Improper",
+			"answer3": "Proper if NO PARKING sign is not provided ",
+			"correct": "Improper",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noentry",
+			"Question": "The following sign represents..",
+			"answer1": "Restriction ends",
+			"answer2": "No entry",
+			"answer3": "No overtaking",
+			"correct": "No entry",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Where the slippery road sign is seen on the road, the driver shall",
+			"answer1": "reduce the speed by changing the gear",
+			"answer2": "apply brake",
+			"answer3": "proceed in the same speed",
+			"correct": "reduce the speed by changing the gear",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "sideroadleft",
+			"Question": "The following sign represents..",
+			"answer1": "May turn to left",
+			"answer2": "Compulsory go ahead or turn left",
+			"answer3": "Side road left",
+			"correct": "Side road left",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Overtaking is prohibited in following circumstances",
+			"answer1": "when it is likely to cause inconvenience or danger to other traffic",
+			"answer2": "when the vehicle in front is reducing speed",
+			"answer3": "during night",
+			"correct": "when it is likely to cause inconvenience or danger to other traffic",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "horncompal",
+			"Question": "The following sign represents..",
+			"answer1": "Sound horn compulsory",
+			"answer2": "Sound horn continuously",
+			"answer3": "Horn prohibited",
+			"correct": "Sound horn compulsory",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Overtaking when approaching a bend",
+			"answer1": "is permissible",
+			"answer2": "not permissible",
+			"answer3": "is permissible with care",
+			"correct": "not permissible",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "comturnright",
+			"Question": "The following sign represents..",
+			"answer1": "Road to the right in front",
+			"answer2": "Compulsory turn right",
+			"answer3": "Turn to right prohibited",
+			"correct": "Compulsory turn right",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Drunken driving",
+			"answer1": "allowed in private vehicles",
+			"answer2": "allowed during night time",
+			"answer3": "prohibited in all vehicles",
+			"correct": "prohibited in all vehicles",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "nopark",
+			"Question": "The following sign represents..",
+			"answer1": "End of restriction",
+			"answer2": "Do not stop",
+			"answer3": "No parking",
+			"correct": "No parking",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Use of horn prohibited",
+			"answer1": "Mosque, Church and Temple",
+			"answer2": "Near Hospital, Courts of Law",
+			"answer3": "Near Police Station",
+			"correct": "Near Hospital, Courts of Law",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "oneway",
+			"Question": "The sign represents",
+			"answer1": "Go straight",
+			"answer2": "One-way",
+			"answer3": "Prohibited in both direction",
+			"correct": "One-way",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Rear view mirror is used",
+			"answer1": "for seeing face",
+			"answer2": "for watching the traffic approaching from behind",
+			"answer3": "for seeing the back seat passenger",
+			"correct": "for watching the traffic approaching from behind",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+			"url": "noimg",
+			"Question": "Vehicles proceeding from opposite direction should be allowed to pass through",
+			"answer1": "Your right side",
+			"answer2": "Your left side",
+			"answer3": "The convenient side",
+			"correct": "Your right side",
+			"messege": "Do you want to close the exam?",
+			"yes": "yes",
+			"no": "no"
+		},{
+		"url": "noimg",
+		"Question": "The sign represents ",
+		"answer1": "No entry for motor vehicles",
+		"answer2": "No entry for cars and motor cycles",
+		"answer3": "Entry allowed for cars and motor vehicles",
+		"correct": "No entry for motor vehicles",
+		"messege": "Do you want to close the exam?",
+		"yes": "yes",
+		"no": "no"
+	}]
+}
